@@ -1,10 +1,12 @@
 footer {
+    position: relative;
     display: block;
     background-color: black;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+    bottom: 0;
     .footerbox {
-        margin: 10px;
+        margin: 5px;
         display: flex;
         justify-content: space-around;
         .sideborder {
@@ -22,12 +24,13 @@ footer {
         }
     }
     .logobox {
+        padding-top: 5px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     .logos {
-        width: 20px;
+        width: 25px;
         height: auto;
     }
     p { 
