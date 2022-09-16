@@ -2,12 +2,23 @@ header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    font-size: 1rem;
     h1 {
+        font-size: 2rem;
         &:hover {
             color: red;
         }
     }
-    p {
-        font-weight: bold;
+    .searchbox {
+        display: inline-flexbox;
+        height: 20px;
+        .searchbtn {
+            font-weight: bold;
+            border: none;
+            background-color: transparent;
+            &:hover {
+                color: red;
+            }
+        }
     }
 }

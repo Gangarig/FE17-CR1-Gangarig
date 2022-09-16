@@ -9,17 +9,18 @@
 .Picturelink {
     display: flexbox;
     position: relative;
-    background-color: gray;
-    opacity: .4;
+    background-color:opacify($color: #2c2a2a54, $amount: 0.2);
     color: white;
     width: 100%;
-    bottom: 50px;
-    height: 50px;
+    bottom: 30px;
+    height: 30px;
     border: none;
     font-weight: bold;
-    font-size: medium;
+    font-size: 1rem;
+    &:hover {
+        color: red;
+    }
 }
-
 img {
     display: flex;
     object-fit: cover;
@@ -27,39 +28,29 @@ img {
     height: 100%;
 }
 .img1 {
-    background-image: url("Pictures/Breakfast.jpg");
     grid-area: 1/1/4/4;
 }
 .img2 {
-    background-image: url("Pictures/Cake.jpg");
     grid-area: 1/4/4/7;
 }
 .img3 {
     grid-area: 1/7/4/10;    
-    background-image: url("Pictures/Cheesburger.jpg");
 }
 .img4 {
     grid-area: 4/1/7/4;
-    background-image: url("Pictures/Dimsum.jpg");
 }
 .img5 {
     grid-area: 4/4/7/7;
-    background-image: url("Pictures/Egg_salad.jpg");
 }
 .img6 {
     grid-area: 4/7/7/10;
-    background-image: url("Pictures/Pancakes.jpg");
 }
 .img7 {
     grid-area: 7/1/10/4;
-    background-image: url("Pictures/Pasta.jpg");
 }
 .img8 {
     grid-area: 7/4/10/7;
-    background-image: url("Pictures/Pizza.webp");
 }
 .img9 {
     grid-area: 7/7/10/10;
-    object-fit: cover;
-    background-image: url("Pictures/Steak.jpg");
 }
