@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    h1 {
+        &:hover {
+            color: red;
+        }
+    }
+    p {
+        font-weight: bold;
+    }
+}

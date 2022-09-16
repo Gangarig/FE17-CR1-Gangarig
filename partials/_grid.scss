@@ -1,0 +1,11 @@
+.container {
+    padding: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(15,200px);
+    grid-template-rows: repeat(15,50px);
+    .img1 {
+       grid-area: 2/2/5/6;
+    }
+
+}
