@@ -1,12 +1,10 @@
-@import "partials/body";
+@import "partials/main";
 @import "partials/navbar.scss";
 @import "partials/header";
 @import "partials/grid";
 @import "partials/footer";
-@import "partials/Extralargescreen";
-@import "partials/Largescreen";
-@import "mediumTabletscreen";
-@import "partials/Mobilescreen";
-@import "partials/Mobilemedium";
-@import "partials/Mobilesmall";
+@import "Mediaqueries/Extralarge";
+@import "Mediaqueries/Largescreen";
+@import "Mediaqueries/mediumTabletscreen";
+@import "Mediaqueries/Mobile";
 

@@ -1,5 +1,5 @@
 header {
-    padding-left: 5rem;
+    padding-left: 50px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -42,10 +42,16 @@ button {
     width: 3.5rem;
     background-image: url(Pictures/Searchsymbol.png);
     border-radius: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3.5rem 3rem;
     &:hover {
         border: none;
         height: 3rem;
         width: 3.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 3.5rem 3rem;
         background-image: url(Pictures/Searchsymbolred.jpg);
         border-radius: 15%;
     }
