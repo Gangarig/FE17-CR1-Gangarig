@@ -10,7 +10,7 @@
             width: 6rem;
         }
     }
-    button {
+    .searchbtn {
         width: 30px;
         height: 20px;
         background-size:30px 20px;
@@ -31,8 +31,10 @@
         width: 100%;
         height: 2rem;
         .btn { 
+            background-color: beige;
             width: 100%;
             font-size: 0.7rem;
+            
         } 
     }
     .container {
@@ -74,5 +76,40 @@
     }
     .img9 {
         grid-area:5/1/5/2;
+    }
+    .Recipe {
+        padding-left:50px;
+        padding-right:50px;
+        img {
+            padding-right: 50px;
+            width: 380px;
+            height: auto;
+        }
+    }
+    hr {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .Recipe {
+        font-size: 1.1rem;
+    }
+    .aboutus { 
+        background-image: url(Pictures/bg1.jpg);
+        height: 900px;
+        width: 100%;
+        font-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: beige;
+    }
+    .aboutuscontent {
+        background-color: opacify($color: #0000000a, $amount:0.6);
+        font-family: 'Josefin Sans', sans-serif;
+        height: 900px;
+    }
+    .aboutustext {
+        padding-top: 250px;
     }
 }

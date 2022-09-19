@@ -5,10 +5,17 @@ header {
     justify-content: space-between;
     font-size: 1rem;
     h1 {
+        font-family: 'Ms Madi', cursive;
         font-size: 2rem;
         &:hover {
             color: red;
         }
+    }
+    a {
+        color: black;
+    }
+    .notextdeco {
+        text-decoration: none;
     }
     .searchbox {
         border: none;
@@ -45,6 +52,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 3.5rem 3rem;
+    background-color: beige;
     &:hover {
         border: none;
         height: 3rem;

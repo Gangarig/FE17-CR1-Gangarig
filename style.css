@@ -1,12 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap");
 body {
   margin: 0;
   width: 100%;
   height: auto;
+  background-color: #f5f5dc;
 }
 
+/* Here is the style for Recipe of the month*/
 .Recipe {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
   padding-top: 50px;
-  padding-left: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Saira Condensed", sans-serif;
+}
+.Recipe h2 {
+  justify-content: center;
+  text-align: center;
+}
+.Recipe .middle {
+  text-align: center;
+}
+.Recipe .flexbox {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.Recipe .flexbox p {
+  width: 33%;
+  text-align: center;
+}
+.Recipe .sideborderblack {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.Recipe img {
+  padding-right: 50px;
+  width: 700px;
+  height: auto;
+}
+.Recipe .rating {
+  font-size: 25px;
+  color: #F4B400;
+}
+.Recipe .rating .center {
+  text-align: center;
+}
+.Recipe .nutrition {
+  width: 250px;
+  height: auto;
+}
+.Recipe hr {
+  background-color: gray;
+  border: 4px solid gray;
+}
+
+.aboutus {
+  background-image: url(Pictures/bg1.jpg);
+  height: 900px;
+  width: 100%;
+  font-size: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: beige;
+}
+
+.aboutuscontent {
+  background-color: rgba(0, 0, 0, 0.6392156863);
+  font-family: "Josefin Sans", sans-serif;
+  height: 900px;
+}
+
+.aboutustext {
+  padding-top: 350px;
 }
 
 nav {
@@ -18,14 +92,16 @@ nav {
   height: 3rem;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+  background-color: #f5f5dc;
 }
 nav .btn {
-  background-color: white;
+  background-color: #f5f5dc;
   display: inline-flex;
   justify-content: space-around;
   width: 100%;
   border: none;
   font-size: 1.1rem;
+  font-family: "Anton", sans-serif;
 }
 nav .btn:hover {
   color: red;
@@ -39,10 +115,17 @@ header {
   font-size: 1rem;
 }
 header h1 {
+  font-family: "Ms Madi", cursive;
   font-size: 2rem;
 }
 header h1:hover {
   color: red;
+}
+header a {
+  color: black;
+}
+header .notextdeco {
+  text-decoration: none;
 }
 header .searchbox {
   border: none;
@@ -80,6 +163,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 3.5rem 3rem;
+  background-color: beige;
 }
 button:hover {
   border: none;
@@ -116,6 +200,7 @@ button:active {
   border: none;
   font-weight: bold;
   font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 .Picturelink:hover {
   color: red;
@@ -183,6 +268,7 @@ footer .footerbox .sideborder {
 }
 footer .footerbtn {
   font-size: 1rem;
+  font-family: "Anton", sans-serif;
   background-color: black;
   color: white;
   width: 100%;
@@ -222,9 +308,6 @@ footer p {
   header h1 {
     font-size: 4rem;
   }
-  header h1:hover {
-    color: red;
-  }
   nav {
     height: 4rem;
   }
@@ -243,12 +326,12 @@ footer p {
     border-radius: 5%;
     width: 13rem;
   }
-  button {
+  .searchbtn {
     height: 4rem;
     width: 4.5rem;
     background-size: 4.5rem 4rem;
   }
-  button:hover {
+  .searchbtn:hover {
     height: 4rem;
     width: 4.5rem;
     background-size: 4.5rem 4rem;
@@ -262,8 +345,38 @@ footer p {
     height: 4rem;
     font-size: 2rem;
   }
+  .Recipe img {
+    padding-right: 50px;
+    width: 900px;
+    height: auto;
+  }
+  hr {
+    margin-left: 0%;
+    width: 40%;
+    background-color: gray;
+    border: 4px solid gray;
+  }
+  .aboutus {
+    background-image: url(Pictures/bg1.jpg);
+    height: 900px;
+    width: 100%;
+    font-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: beige;
+  }
+  .aboutuscontent {
+    background-color: rgba(0, 0, 0, 0.6392156863);
+    font-family: "Josefin Sans", sans-serif;
+    height: 900px;
+  }
+  .aboutustext {
+    padding-top: 150px;
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1400px) {
   nav {
     position: absolute;
     justify-content: space-between;
@@ -274,7 +387,7 @@ footer p {
   }
   nav .btn {
     width: 100%;
-    background-color: white;
+    background-color: beige;
     border: none;
     font-size: 1rem;
   }
@@ -307,7 +420,7 @@ footer p {
     width: 7rem;
     background-color: gray;
   }
-  button {
+  .searchbtn {
     width: 40px;
     height: 30px;
     background-repeat: no-repeat;
@@ -317,7 +430,7 @@ footer p {
     background-image: url(Pictures/Searchsymbol.png);
     border-radius: 15%;
   }
-  button:hover {
+  .searchbtn:hover {
     width: 40px;
     height: 30px;
     background-position: center;
@@ -328,6 +441,41 @@ footer p {
   }
   button:active {
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  }
+  .Recipe {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .Recipe img {
+    padding-right: 50px;
+    width: 700px;
+    height: auto;
+  }
+  hr {
+    margin-left: 0%;
+    width: 80%;
+  }
+  .Recipe {
+    font-size: 1.7rem;
+  }
+  .aboutus {
+    background-image: url(Pictures/bg1.jpg);
+    height: 900px;
+    width: 100%;
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: beige;
+  }
+  .aboutuscontent {
+    background-color: rgba(0, 0, 0, 0.6392156863);
+    font-family: "Josefin Sans", sans-serif;
+    height: 900px;
+  }
+  .aboutustext {
+    padding-top: 200px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -342,14 +490,14 @@ footer p {
   .searcharea:hover {
     width: 6rem;
   }
-  button {
+  .searchbtn {
     width: 30px;
     height: 20px;
     background-size: 30px 20px;
     background-image: url(Pictures/Searchsymbol.png);
     border-radius: 15%;
   }
-  button:hover {
+  .searchbtn:hover {
     width: 30px;
     height: 20px;
     background-size: 30px 20px;
@@ -364,6 +512,7 @@ footer p {
     height: 2rem;
   }
   nav .btn {
+    background-color: beige;
     width: 100%;
     font-size: 0.7rem;
   }
@@ -407,13 +556,48 @@ footer p {
   .img9 {
     grid-area: 5/1/5/2;
   }
+  .Recipe {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .Recipe img {
+    padding-right: 50px;
+    width: 380px;
+    height: auto;
+  }
+  hr {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .Recipe {
+    font-size: 1.1rem;
+  }
+  .aboutus {
+    background-image: url(Pictures/bg1.jpg);
+    height: 900px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: beige;
+  }
+  .aboutuscontent {
+    background-color: rgba(0, 0, 0, 0.6392156863);
+    font-family: "Josefin Sans", sans-serif;
+    height: 900px;
+  }
+  .aboutustext {
+    padding-top: 250px;
+  }
 }
 @media screen and (max-width: 480px) {
   body {
     margin: 0;
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: beige;
   }
   header {
     padding-left: 1rem;
@@ -424,9 +608,6 @@ footer p {
   }
   header h1 {
     font-size: 1rem;
-  }
-  header h1:hover {
-    color: red;
   }
   header .searchbox {
     border: none;
@@ -453,12 +634,12 @@ footer p {
     width: 3rem;
     background-color: gray;
   }
-  button {
+  .searchbtn {
     height: 15px;
     width: 20px;
     background-size: 20px 15px;
   }
-  button:hover {
+  .searchbtn:hover {
     height: 15px;
     width: 20px;
     background-size: 20px 15px;
@@ -485,6 +666,7 @@ footer p {
     position: relative;
     background-color: rgba(44, 42, 42, 0.5294117647);
     color: white;
+    color: beige;
     width: 100%;
     bottom: 2.5rem;
     height: 2.5rem;
@@ -529,4 +711,37 @@ footer p {
   .img9 {
     grid-area: 9/1/9/2;
   }
-}/*# sourceMappingURL=style.css.map */
+  .Recipe {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+  }
+  .Recipe img {
+    padding-right: 50px;
+    width: 250px;
+    height: auto;
+  }
+  .aboutus {
+    background-image: url(Pictures/bg1.jpg);
+    height: 900px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: beige;
+  }
+  .aboutuscontent {
+    background-color: rgba(0, 0, 0, 0.6392156863);
+    font-family: "Josefin Sans", sans-serif;
+    height: 900px;
+  }
+  .aboutustext {
+    padding-top: 300px;
+  }
+}
+/*font-family: 'Ms Madi', cursive;*/
+/*font-family: 'Anton', sans-serif;*/
+/*font-family: 'Josefin Sans', sans-serif;*/
+/*font-family: 'Saira Condensed', sans-serif;*//*# sourceMappingURL=style.css.map */
